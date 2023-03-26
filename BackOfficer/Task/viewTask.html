@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MCP Management</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-IwHwCVxTJgOl3+TydEabTzPybJkO9Qa+wImR0IHmkQJhK+h0GQTqa8W0M+OyUnhJLzIK9X4jnTNZ4Y+Alw2/w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../../uwc22/assets//plugins/fontawesome-free/css/all.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../uwc22/assets//dist/css/adminlte.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+                </a>
+                <div class="navbar-search-block">
+                <form class="form-inline">
+                    <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                        <i class="fas fa-search"></i>
+                        </button>
+                        <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                        <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </li>
+
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-bell"></i>
+                <span class="badge badge-warning navbar-badge">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-item dropdown-header">15 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-envelope mr-2"></i> 4 new messages
+                    <span class="float-right text-muted text-sm">3 mins</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-users mr-2"></i> 8 friend requests
+                    <span class="float-right text-muted text-sm">12 hours</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                    <i class="fas fa-file mr-2"></i> 3 new reports
+                    <span class="float-right text-muted text-sm">2 days</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                </div>
+            </li>
+            </ul>
+        </nav>
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" >
+            <a href="#" class="brand-link">
+                <img src="https://hcmut.edu.vn/img/nhanDienThuongHieu/01_logobachkhoasang.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">MCP APP</span>
+            </a>
+            <div class="sidebar  ">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="/../../uwc22/assets/dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">VO HOAI NAM</a>
+                    </div>
+                </div>
+                
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="taskManagement.html" class="nav-link active">
+                                <i class="nav-icon fas fa-book"></i>
+                                <p>
+                                    Task management
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../MCP/MCPManagement.html" class="nav-link">
+                                <i class="nav-icon far fa-plus-square"></i>
+                                <p>
+                                    MCP Management
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Equip/equipmentManangement.html" class="nav-link">
+                                <i class="nav-icon fas fa-eye"></i>
+                                <p>
+                                    Equip Management
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Employee/employeeManagement.html" class="nav-link">
+                                <i class="nav-icon fas fa-ellipsis-h"></i>
+                                <p>Employee</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contact.html" class="nav-link">
+                                <i class="nav-icon fas bi bi-telephone-fill"></i>
+                                <p>
+                                    Contact
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="nav-icon fas bi bi-box-arrow-right"></i>
+                                <p>
+                                    Log out
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+        </aside>
+    <div class="content-wrapper">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>View task</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Task management</a></li>
+                    <li class="breadcrumb-item active">View task</li>
+                    </ol>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+
+<section class="content">
+    <!-- Default box -->
+    <div class="card card-primary">
+        <div class="card-header">
+            <h1 class="card-title">View task</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h3 class="text-danger"></i> Dọn dẹp rác đường Nguyễn Thị Thập</h3>
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <div class="info-box bg-light bg-blue">
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-center ">Ngày bắt đầu</span>
+                                    <span class="info-box-number text-center mb-0">22-02-2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="info-box bg-light bg-yellow">
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-center ">Ngày hết hạn</span>
+                                    <span class="info-box-number text-center  mb-0">24-02-2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="info-box bg-light bg-green">
+                                <div class="info-box-content">
+                                    <span class="info-box-text text-center ">Tiến độ</span>
+                                    <span class="info-box-number text-center  mb-0">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>Team members</h4>
+                            <div class="post">
+                                <div class="user-block">
+                                    <img class="img-circle img-bordered-sm" src="../../uwc22/assets/dist/img/avatar.png" alt="user image">
+                                    <span class="username">
+                                        <a href="#">NGUYEN THI HOA</a>
+                                    </span>
+                                    <span class="description">Collector- xe chở rác</span>
+                                </div>
+                                <!-- /.user-block -->
+                                <p>
+                                    Chịu trách nhiệm thu gom từ hẻm ... đến hẻm ...
+                                </p>
+                            </div>
+
+                            <div class="post clearfix">
+                                <div class="user-block">
+                                    <img class="img-circle img-bordered-sm" src="../../uwc22/assets/dist/img/avatar2.png" alt="user image">
+                                    <span class="username">
+                                        <a href="#">NGUYEN VAN NEN</a>
+                                    </span>
+                                    <span class="description">Janitor-xe thồ</span>
+                                </div>
+                                <!-- /.user-block -->
+                                <p>
+                                    Chịu trách nhiệm thu gom từ hẻm ... đến hẻm ...
+                                    ádfa
+                                </p>
+                            </div>
+
+                            <div class="post">
+                                <div class="user-block">
+                                    <img class="img-circle img-bordered-sm" src="../../uwc22/assets/dist/img/avatar3.png" alt="user image">
+                                    <span class="username">
+                                        <a href="#">NGUYEN HOANG QUAN</a>
+                                    </span>
+                                    <span class="description">Janitor</span>
+                                </div>
+                                <!-- /.user-block -->
+                                <p>
+                                    Chịu trách nhiệm thu gom từ hẻm ... đến hẻm ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5 mb-3">
+                        <a href="taskManagement.html" class="btn btn-sm btn-secondary">Cancel</a>
+                        <a href="edit" class="btn btn-sm btn-primary">Edit</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+
+</section>
+    </div>
+    </div>
+
+    <!-- js,boot -->
+    <script src="../../uwc22/assets//plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../../uwc22/assets//plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../../uwc22/assets//plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="../../uwc22/assets//plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="../../uwc22/assets//plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="../../uwc22/assets//plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="../../uwc22/assets//plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="../../uwc22/assets//plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="../../uwc22/assets//plugins/moment/moment.min.js"></script>
+<script src="../../uwc22/assets//plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdo../../uwc22/assets/minus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="../../uwc22/assets//plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../../uwc22/assets//plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../uwc22/assets//dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../uwc22/assets//dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="../../uwc22/assets//dist/js/pages/dashboard.js"></script>
+</body>
+</html>

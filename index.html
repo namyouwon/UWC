@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Log in</title>
+    <style>
+    body {
+        background-image: url('https://cdn.pixabay.com/photo/2021/08/02/05/17/sunflower-6515860__340.jpg');
+        background-size: cover;
+    }
+    </style>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="uwc22/assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="uwc22/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="uwc22/assets/dist/css/adminlte.min.css">
+  <script>
+    var attempt = 3; // Variable to count number of attempts.
+    // Below function Executes on click of login button.
+    function validate(){
+        let text; 
+        var username = document.getElementById("exampleInputEmail").value;
+        var password = document.getElementById("exampleInputPassword").value;
+        if ( username == "admin" && password == "1234"){
+            // alert ("Login successfully");
+            window.location = "BackOfficer/Task/taskManagement.html"; // Redirecting to other page.
+            return false;
+        }
+        else{
+            attempt --;// Decrementing by one.
+            text = "Tài khoản hoặc mật khẩu sai";
+        if( attempt == 0){
+            document.getElementById("username").disabled = true;
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+            return false;
+            }
+        }
+        document.getElementById("demo").innerHTML = text;
+        console.log(attempt);
+    }
+  </script>
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="card">
+            <div class="card-body login-card-body">
+                <div class="login-logo">
+                    <h2>ĐĂNG NHẬP</h2>
+                </div>
+                <form action="/admin/users/login/store" method="post">
+                    <!-- Email -->
+                    <div class="input-group mb-3">
+                        <input type="text" name="exampleInputEmail" id="exampleInputEmail" class="form-control" placeholder="Email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Password -->
+                    <div class="input-group mb-3">
+                        <input type="password" name="exampleInputPassword" id="exampleInputPassword" class="form-control" placeholder="Mật khẩu">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Remember/Sign in -->
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" name="remember" id="remember">
+                                <label for="remember">
+                                    Nhớ mật khẩu 
+                                </label>
+                            </div>
+                            <div class="text-center text-danger small" id="demo"></div>
+                        </div>
+                    </div>
+                    <div class="text-center text-danger mb-4 small" id="demo"></div>
+                    <a id="submit" class="btn btn-primary btn-block" onclick="validate()"><strong><span style="color: rgb(255, 255, 255);">Đăng nhập</span></strong></a>
+                    <a href="register" class="btn btn-danger btn-block">Đăng kí</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
